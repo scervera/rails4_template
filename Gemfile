@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer',  platforms: :ruby
 gem 'execjs'
-
+gem 'rubygems-bundler'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
@@ -42,6 +42,18 @@ gem 'mysql2', '~> 0.3.14'
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
 
+# Bundle the extra gems:
+gem 'haml'
+gem 'devise'
+gem 'cells'
+gem 'rack'
+gem 'will_paginate'
+gem 'paperclip', '~> 3.0'
+gem 'profanity_filter'
+#gem 'rmagick' #, '2.13.2' #, :git=>'http://github.com/rmagick/rmagick.git'# gem 'mini_magick'
+gem 'carrierwave'
+gem 'mime-types'
+gem 'cancan'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 

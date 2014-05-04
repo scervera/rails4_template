@@ -3,10 +3,13 @@ lock '3.2.1'
 
 set :application, 'mdnapp'
 
-set :repo_url, 'https://quark.thecerveras.com/git/mdn2.git'
-set :git_https_username, 'adm1n'
-set :git_https_password, 'redeemed1'
-# set :repo_url, 'ssh://adm1n:redeemed1@quark.thecerveras.com/git/mdn2.git'
+set :repo_url, 'ssh://quark.thecerveras.com/git/mdn2.git'
+#set :repo_url, 'ssh://quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
+#set :repo_url, 'https://adm1n:redeemed1@quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
+#set :git_https_username, 'adm1n'
+#set :git_https_password, 'redeemed1'
+set :ssh_options, { :forward_agent => true }
+
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
