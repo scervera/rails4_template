@@ -16,7 +16,7 @@ set :ssh_options, { :forward_agent => true }
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/var/mdnapp'
-
+set :keep_releases, 5
 # Default value for :scm is :git
 set :scm, :git
 
