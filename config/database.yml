@@ -25,7 +25,7 @@ production:
   encoding: utf8
   reconnect: true
   database: mdndata_production
-  username: root
+  username: coach
   password: 0708SMClfq!
   socket: /var/run/mysqld/mysqld.sock
   pool: 5
