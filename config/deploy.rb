@@ -65,7 +65,7 @@ namespace :deploy do
       # Your restart mechanism here
       # run "cp #{shared_path}/config/database.yml #{latest_release}/config/"
       # execute :ln "-sf #{current_path}/public/ #{deploy_to}"
-      execute :touch, "release_path.join('tmp/restart.txt')"
+      execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 
