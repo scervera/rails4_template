@@ -1,6 +1,10 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
+  layout :resolve_layout
+  #layout "no-side", :only => [:edit, :new, :create, :index]
+  #layout "interior", :only => [:show]
+
   # GET /articles
   # GET /articles.json
   def index
@@ -69,6 +73,18 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :author, :publish)
+      params.require(:article).permit(:title, :author, :publish, :subtitle, :figure, :content)
     end
+
+    def resolve_layout
+      case action_name
+      when "edit", "new", "create", "index"
+        "no_side"
+      when "show"
+        "interior"
+      else
+        "application"
+    end
+
+  end
 end

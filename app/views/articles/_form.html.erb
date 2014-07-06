@@ -24,8 +24,15 @@
     <%= f.text_field :author %>
   </div>
   <div class="field">
+    <%= f.label :article_content %><br>
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
     <%= f.label :publish %><br>
     <%= f.check_box :publish %>
+  </div>
+  <div class="field">
+    <%= f.label :article_image %> <%= f.file_field :figure %><br />
   </div>
   <div class="actions">
     <%= f.submit %>

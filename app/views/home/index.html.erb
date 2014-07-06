@@ -27,9 +27,9 @@
     <div class="large-8 columns pull-left">
       <div class="row">
           <div class="large-6 columns">
-            <img src="http://placehold.it/400x300&text=[img]" />
-            <h4>This is a content section.</h4>
-            <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+            <%= image_tag("curriculum/weapons_kit.jpg", :alt => 'Photo of WEAPONS training curriculum kit.')%>
+            <h4>W.E.A.P.O.N.S. Training for Men</h4>
+            <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. <a href="/pages/curriculum" >Find out more</a></p>
           </div>
        
           <div class="large-6 columns">
@@ -40,25 +40,7 @@
       </div>
 
       <div class="row">
-        <div class="large-12 columns  radius main-articles">
-          <hr />
-          <h4>This is a content section #1.</h4><img src="http://placehold.it/100x100&text=[img]" />
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-          <a href="#" class="button tiny alert">Read More</a>
-        
-        </div>
-        <div class="large-12 columns  radius main-articles">
-          <hr />
-          <h4>This is a content section #1.</h4><img src="http://placehold.it/100x100&text=[img]" />
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-          <a href="#" class="button tiny alert">Read More</a>
-        </div>
-        <div class="large-12 columns  radius main-articles">
-          <hr />
-          <h4>This is a content section #1.</h4><img src="http://placehold.it/100x100&text=[img]" />
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-          <a href="#" class="button tiny alert">Read More</a>
-        </div>
+       <%= render_cell :article_display, :display, :articles => @articles %>
       </div>
     </div>
     <div id="sidebar" class="large-4 columns pull-right line-left">
@@ -105,7 +87,7 @@
         </div>
         <div class="box class_box_shadow">
             <div class="headingbox"><h4>Featured Resource</h4></div>
-            <div class="infobox pull-left">
+            <div class="infobox pull-left clearfix">
               <%= image_tag("crazy_love_med.jpg", :alt => 'Crazy Love')%>
               <p>Are you crazy for God? Would someone looking at your life accuse you of being out of balance or even fanatical?</p>
               <h5>by Francis Chan</h5>
@@ -192,15 +174,6 @@
         <div class="large-6 columns">
           <p>© Men's Discipleship Network, 501c3 non-profit. All rights reserved.</p>
         </div>
-
-        <!-- <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div> -->
       </div>
     </div> 
   </footer>

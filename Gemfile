@@ -15,11 +15,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer',  platforms: :ruby
 gem 'execjs'
 gem 'rubygems-bundler'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Zurb Foundation
 gem 'foundation-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -49,7 +48,7 @@ gem 'haml'
 gem 'devise'
 gem 'cells'
 gem 'rack'
-gem 'rack'
+gem "mini_magick"
 gem 'will_paginate'
 gem 'paperclip', '~> 3.0'
 gem 'profanity_filter'

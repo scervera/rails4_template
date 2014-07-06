@@ -1,0 +1,95 @@
+<div id="top-image">
+	<%= image_tag("mannerisms/mannerisms_top_image.jpg", :width => '730', :height => '295', :alt => 'Men of different races standing together at a boot camp smiling')%>
+</div>
+<div class="interior_content clearfix">
+	<h1><span style="font-size: 24pt";>Man&#183;ner&#183;isms</span> <span class="definition" style="font-size: 18pt">(`man,n&#601;r,izms)</h1>
+	<span class="definition"><p>Definition: A short, pithy saying that expresses a basic truth or practical precept used for indoctrination of men in Biblical Truth.</p></span>
+	</br>
+	<div id=mannerisms>
+		<ul>
+<<<<<<< HEAD
+			<li>"A man who sells his words for the price of approval, prostitutes his integrity."<span class="citation"> Scott Caesar</span></li>
+			<li>"The worship of safety emasculates biblical manhood."<span class="citation"> Scott Caesar</span></li>
+			<li>"Headship is not a position, until it becomes a responsibility."<span class="citation"> Scott Caesar</span></li>
+			<li>"Laziness is not a man who does nothing, but a man who does what he wants, when he wants."<span class="citation"> Scott Caesar</span></li>
+			<li>“When a man allows God to change the way he looks at things, the things he looks at change.”</li><span class="citation"> Scott Caesar</span>
+			<li>"A man is to teach his children holiness through the value of virginity; and if lost, teach that God may not restore virginity, but willingly restores purity" <span class="citation"> Scott Caesar</span> </li>
+			<li>"The Christian Life is a Constant Negotiation between the Flesh and the Spirit that which is fed more will determine the quality of that Life" <span class="citation"> Scott Caesar</span> </li>
+			<li>Courage is forged in private values of mind, before revealed in public sacrifice of self.  Courage is always an attitude before it is an act. <span class="citation">Scott Caesar</span></li>
+			<li>"The Language of Compromise sounds reasonable" <span class="citation">Scott Caesar</span></li>
+			<li>"Integrity is what exists in the space between a man's word and his action."<span class="citation">Scott Caesar</span></li>
+			<li>"Mediocre men want authority without accountability. They want respect with out responsibility". <span class="citation">Scott Caesar A</li>
+=======
+			<li>"The worship of safety emasculates biblical manhood."</li></br><span class="citation"> Scott Caesar</span>
+			<li>"Headship is not a position, until it becomes a responsibility."</li></br><span class="citation"> Scott Caesar</span>
+			<li>"A lazy man is not a man who does nothing, but a man who does what he wants, when he wants."</li></br><span class="citation"> Scott Caesar</span>
+			<li>“When a man allows God to change the way he looks at things, the things he looks at change.”</li></br><span class="citation"> Scott Caesar</span>
+			<li>"A man is to teach his children holiness through the value of virginity; and if lost, teach that God may not restore virginity, but willingly restores purity" <span class="citation"> Scott Caesar</span> </li></br>
+			<li>"The Christian Life is a Constant Negotiation between the Flesh and the Spirit that which is fed more will determine the quality of that Life" <span class="citation"> Scott Caesar</span> </li></br>
+			<li>Courage is forged in private values of mind, before revealed in public sacrifice of self.  Courage is always an attitude before it is an act. <span class="citation">Scott Caesar</span></li></br>
+			<li>"The Language of Compromise sounds reasonable" <span class="citation">Scott Caesar</span></li></br>
+			<li>"Integrity is what exists in the space between a man's word and his action."<span class="citation">Scott Caesar</span></li></br>
+			<li>"Mediocre men want authority without accountability".                                                               "They want respect with out responsibility". <span class="citation">Scott Caesar A</li></br>
+>>>>>>> asset_pipeline
+
+			<li>"When A Man goes For advice its is but a portion of what he needs, he needs training". "For men do not get what they wish for, they get what they prepare for, train, for and live for".<span class="citation">Dr AR Bernard & Scott Caesar D</span></li>
+
+			<li>"Truth That Transforms.. Needs Training That Sustains" <span class="citation"> Scott Caesar</span></li>
+
+			<li>"The Christian walk is not hard, It's impossible"!  <span class="citation"> Scott Caesar</span></li>
+
+			<li>"Manhood and Christ-likeness are Synonymous" <span class="citation"> Dr. Edwin Louis Cole Friend & Mentor</span></li>
+
+			<li>"You Change a Society One Family at a time.You Change Families One Man at a time" <span class="citation"> Scott Caesar</span></li>
+
+			<li>"The Masculine Mandate is to Prove Spiritually- to Provide Morally- to Protect Physically."<span class="citation"> Scott Caesar</span></li>
+
+			<li>"Authentic Faith in a Man is the empowered ability to go from one failure to another with no loss of belief." <span class="citation"> Scott Caesar</span></li>  
+
+			<li>"Maturity has little to do with age but all to do with responsibility".<span class="citation"> Dr. Edwin Louis Cole, Friend & Mentor </span></li>
+			<li>"Maturity in man is marked by his progressive ability to overcome self pity." <span class="citation">Scott Caesar</span></li>
+			<li>"The Compromise to Sin is nothing compared to the consequences of sin".<span class="citation"> Scott Caesar A</span> </li>
+
+			<li>"How a Man Treats and Speaks to His Wife and Children, is How He would run the World if it was his to run." <span class="citation"> Scott Caesar</span></li>
+
+			<li>"Spiritual Talent is Overrated. Practice Makes Power." <span class="citation">Scott Caesar</span> </li>
+
+			<li>"It does not take much of a man to be a Christian, just all of him."  <span class="citation">Dr. Edwin Louis Cole, Friend & Mentor</span></li>
+
+			<li>"When a Man is out of Place, His Wife is Misplaced, His Children are Displaced, and God is Replaced". <span class="citation"> Anonymous </span></li>
+
+			<li>"Mediocre men want authority without accountability".They want respect with out responsibility". <span class="citation">Scott Caesar A</span></li>
+
+			<li>"Isolated men are in danger as men are as sick as their secrets"<span class="citation"> Scott Caesar</span></li>
+
+			<li>"The Success of any Business, Ministry or Movement is not in the accomplishment of it's leader or it's heroes, but what the culture of that team calls normal and accepted". <span class="citation">Scott Caesar</span></li>
+
+			<li>"When a man takes a Good thing and makes it a God thing it becomes a Bad thing."<span class="citation"> Scott Caesar F</span></li>
+
+			<li>"A Stronghold is Lie Believed then lived" <span class="citation">Scott Caesar</span></li>
+
+			<li>"The Only Scripture You Believe is The One you Obey"<span class="citation"> Dr. Edwin Louis Cole</span></li>
+
+			<li>"Unbelievers are simply finding believers, unbelievable" <span class="citation">Anonymous</span></li>
+
+			<li>"Maturity in man is marked by his progressive ability to overcome self pity." <span class="citation">Scott Caesar</span></li>
+			<li>"Bad habits have short-term benefits but long - term consequences."<span class="citation">A R Bernard</span></li>
+			<li>"The Success of any Business, Ministry or Movement is not in the accomplishment of it's leader or it's heroes, but what the culture of that team calls good and acceptable." <span class="citation">Scott Caesar</span></li>
+		
+			
+		</ul>
+	</div>
+	<div id="notes">
+		<p>Notes:</p>
+		<p>Head Coach Scott has been influenced by many great men of God and wishes to acknowledge those who have inspired many of these quotes. The letter next to each quote indicates the identity of these people.</p></br>
+		<ul>
+			<li>A - inspired by Dr. Edwin Louis Cole</li>
+			<li>B - inspired by Coach Bill McCartney</li>
+			<li>C - inspired by Wellington Boone</li>
+			<li>D - inspired by John Maxwell</li>
+			<li>E - inspired by Dr. AR Bernard</li>
+			<li>F - inspired by Mark Driscoll</li>
+		</ul>
+	
+	</div>
+</div>

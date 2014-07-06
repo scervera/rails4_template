@@ -1,0 +1,14 @@
+<% @articles.each do |article| %>
+
+	 <div class="large-12 columns  radius main-articles">
+		  <hr />
+		  <h4><%= article.title %> </h4>
+		  <h5><%= article.subtitle %></h5>
+		  <p>by <%= article.author %></p>
+		  <%= image_tag article.figure_url(:thumb).to_s %>
+		  <p><%= truncate(article.content, length: 900, separator: ' ') %></p>
+		  <%= link_to( "Read More", article, :class => 'button tiny alert') %>
+	        
+	</div>
+
+<% end %>

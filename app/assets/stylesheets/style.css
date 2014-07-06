@@ -19,7 +19,7 @@
 .five {height: 5px;}
 .ten {height: 10px;}
 
-.row {max-width: 128em;}
+.row {max-width: 100em;}
 
 .line-left {border-left: 1px solid #ccc; padding-left: 2%; margin-bottom: 10px;}
 
@@ -44,11 +44,20 @@
 .headingbox {background: #333333; margin-right: 15px; margin-top: 15px; padding: 2px 2px 2px 15px;}
 .headingbox h4{color: white; margin-bottom: 0px;}
 .headingbox h5{color: white; margin-top: 0px; line-height: 80%;}
-.infobox {margin: 5px 15px 5px 10px;}
-.infobox img {float:left; margin: 0px 15px 0px 0px;}
+.infobox {margin: 5px 15px 5px 10px; height: auto;}
+.infobox img {
+	float:left; 
+	margin: 0px 15px 0px 0px; 
+	box-shadow: 6px 3px 16px 0px rgba(119, 119, 119, 0.60);
+-moz-box-shadow: 6px 3px 16px 0px rgba(119, 119, 119, 0.60);
+-webkit-box-shadow: 6px 3px 16px 0px rgba(119, 119, 119, 0.60);
+}
 
 .main-articles {float: left;}
 .main-articles:nth-child(odd) img {float: left; margin: 5px 8px 2px 8px;}
 .main-articles:nth-child(even) img {float: right; margin: 5px 8px 2px 8px;}
+
+h4 {line-height: 90%;}
+h5 {line-height: 90%;}
 
 
