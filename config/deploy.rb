@@ -70,11 +70,6 @@ namespace :deploy do
     end
   end
 
-  # desc 'Recreating symlinks for uploads'
-  # task :symlink_uploads do
-  #   sh "rm -rf #{release_path}/public/system/uploads} && ln -nfs #{shared_path}/system/uploads  #{release_path}/public/system/uploads"
-  # end
-
   after :publishing, :restart
 
   after :restart, :clear_cache do
