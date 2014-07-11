@@ -15,8 +15,7 @@ role :db,  %w{adm1n@web.thecerveras.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'web.thecerveras.com', user: 'adm1n', roles: %w{web app db}, my_property: :my_value
-
+server 'web.thecerveras.com', user: 'adm1n', roles: %w{web app db}
 
 # Custom SSH Options
 # ==================
@@ -26,15 +25,16 @@ server 'web.thecerveras.com', user: 'adm1n', roles: %w{web app db}, my_property:
 # Global options
 # --------------
 #  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
+#    keys: %w(/Users/scervera/.ssh/id_rsa),
 #    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+ #   auth_methods: %w(password),
+ #   password: 'redeemed1'
+ # }
 #
 # And/or per server (overrides global)
 # ------------------------------------
-# server 'example.com',
-#   user: 'user_name',
+#server 'example.com',
+#   user: 'username',
 #   roles: %w{web app},
 #   ssh_options: {
 #     user: 'user_name', # overrides user setting above

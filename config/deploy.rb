@@ -3,7 +3,8 @@ lock '3.2.1'
 
 set :application, 'mdnapp'
 
-set :repo_url, 'ssh://quark.thecerveras.com/git/mdn2.git'
+set :repo_url, 'ssh://puppet.thecerveras.com/var/git/mdn2.git'
+#set :repo_url, 'ssh://quark.thecerveras.com/git/mdn2.git'
 #set :repo_url, 'ssh://quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :repo_url, 'https://adm1n:redeemed1@quark.thecerveras.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :git_https_username, 'adm1n'
@@ -44,7 +45,7 @@ set :use_sudo, false
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -68,6 +69,11 @@ namespace :deploy do
       execute :touch, release_path.join('tmp/restart.txt')
     end
   end
+
+  # desc 'Recreating symlinks for uploads'
+  # task :symlink_uploads do
+  #   sh "rm -rf #{release_path}/public/system/uploads} && ln -nfs #{shared_path}/system/uploads  #{release_path}/public/system/uploads"
+  # end
 
   after :publishing, :restart
 
