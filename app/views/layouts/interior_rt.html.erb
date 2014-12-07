@@ -8,7 +8,8 @@
         <%= render "/shared/masthead" %>
         <%= render "/shared/navbar" %>
         <div id="main_content">
-          <%= yield %>
+          <div class="large-8 column"><%= yield %></div>
+          <div class="large-4 column"><%= render "/shared/side_bar"%></div>
         </div>
         <%= render "/shared/footer" %>
         <%= javascript_include_tag "application" %>

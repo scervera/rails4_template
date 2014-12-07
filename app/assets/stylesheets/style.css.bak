@@ -1,7 +1,7 @@
 
 
-#maroon-bar {height: 150px; background: #660000; vertical-align: middle;background: linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.5) 95%) repeat scroll 0% 0% #890000;}
-#gray-bar {margin-bottom: 15px;}
+/*#maroon-bar {height: 150px; background: #660000; vertical-align: middle;background: linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.5) 95%) repeat scroll 0% 0% #890000;}*/
+/*#gray-bar {margin-bottom: 15px;}*/
 
 .middle  {margin-top: 5%;}
 /*.marginb10 {margin-bottom: 10px;} */

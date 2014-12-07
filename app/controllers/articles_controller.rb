@@ -79,11 +79,11 @@ class ArticlesController < ApplicationController
     def resolve_layout
       case action_name
       when "edit", "new", "create", "index"
-        "no_side"
+        "base"
       when "show"
-        "interior"
+        "interior_left"
       else
-        "application"
+        "base"
     end
 
   end
