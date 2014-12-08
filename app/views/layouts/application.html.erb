@@ -3,16 +3,18 @@
   <%= render "/shared/header" %>
 
   <body id="main">
-    <div id="wrapper">
-        <!-- BEGIN Website content -->
-        <%= render "/shared/masthead" %>
-        <%= render "/shared/navbar" %>
-        <div id="main_content">
-          <%= yield %>
-        </div>
-        <%= render "/shared/footer" %>
-        <%= javascript_include_tag "application" %>
-        <!-- END Website content -->
+    <div class="row">
+      <div id="wrapper">
+          <!-- BEGIN Website content -->
+          <%= render "/shared/masthead" %>
+          <%= render "/shared/navbar" %>
+          <div id="main_content">
+            <%= yield %>
+          </div>
+          <%= render "/shared/footer" %>
+          <%= javascript_include_tag "application" %>
+          <!-- END Website content -->
+      </div>
     </div>
   </body>
 </html>

@@ -1,9 +1,10 @@
-#main {background: #A1926F;}
+#main {background: #A1926F; z-index: -1000;}
 #wrapper {
-    width: 90%;
-    margin: 0 auto;
     background: white;
 }
+
+/* Overwrite the Foundation _grid.css that is messing up the navbar alignment */
+.row .row {margin: 0px;}
 
 @import "masthead";
 @import "navbar";
