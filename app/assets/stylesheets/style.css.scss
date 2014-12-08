@@ -1,7 +1,10 @@
 #main {background: #A1926F; z-index: -1000;}
 #wrapper {
-    background: white;
+  background: white;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.50), 0 0 50px rgba(0,0,0,0.1) inset;
+
 }
+
 
 /* Overwrite the Foundation _grid.css that is messing up the navbar alignment */
 .row .row {margin: 0px;}
