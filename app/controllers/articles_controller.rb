@@ -8,7 +8,16 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = Article.rank(:row_order).all
+  end
+
+  def update_row_order
+    @article = Article.find(article_params[:article_id])
+    #@article = Article.find(article_params[:id])
+    @article.row_order_position = article_params[:row_order_position]
+    @article.save
+
+    render nothing: true # this is a POST action, updates sent via AJAX, no view rendered
   end
 
   # GET /articles/1
@@ -73,7 +82,7 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :author, :publish, :subtitle, :figure, :content)
+      params.require(:article).permit(:article_id, :title, :author, :publish, :subtitle, :figure, :content, :row_order_position, :row_order)
     end
 
     def resolve_layout

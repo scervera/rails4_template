@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140519215724) do
+ActiveRecord::Schema.define(version: 20141210121830) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20140519215724) do
     t.string   "subtitle"
     t.string   "figure"
     t.text     "content"
+    t.integer  "row_order"
   end
 
 end
