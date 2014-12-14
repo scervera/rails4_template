@@ -59,6 +59,9 @@ gem 'profanity_filter'
 gem 'carrierwave'
 gem 'mime-types'
 gem 'cancan'
+
+# Slick carousel https://github.com/guyisra/slickjs_rails     http://kenwheeler.github.io/slick/
+gem 'slick_rails'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
