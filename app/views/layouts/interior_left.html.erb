@@ -10,7 +10,11 @@
           <%= render "/shared/navbar" %>
           <div id="main_content">
             <div class="large-4 column"><%= render "/shared/side_bar"%></div>
-            <div class="large-8 column"><%= yield %></div>
+            <div class="large-8 column">
+              <div class=" row article_content">
+                <%= yield %>
+              </div>
+            </div>
           </div>
           <%= render "/shared/footer" %>
           <%= javascript_include_tag "application" %>

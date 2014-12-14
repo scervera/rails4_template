@@ -6,7 +6,7 @@
 		  <h5><%= article.subtitle %></h5>
 		  <p>by <%= article.author %></p>
 		  <%= image_tag article.figure_url(:thumb).to_s %>
-		  <p><%= truncate(article.content, length: 900, separator: ' ') %></p>
+		  <p><%= truncate(article.content, length: 500, separator: ' ') %></p>
 		  <%= link_to( "Read More", article, :class => 'button tiny alert') %>
 	        
 	</div>

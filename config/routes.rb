@@ -3,6 +3,7 @@ Mdn2::Application.routes.draw do
 
   resources :articles do
     post :update_row_order, on: :collection
+    get :manage, on: :collection
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

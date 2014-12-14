@@ -1,0 +1,38 @@
+<h1>Manage Articles</h1>
+
+<table class="table" id="sortable">
+  
+  <thead>
+    <tr>
+      <th width="350">Title</th>
+      <th width="350">Subtitle</th>
+      <th>Author</th>
+      <th>Article ID</th>
+      <th width="5">Publish</th>
+      <th width="5"></th>
+      <th width="5"></th>
+      <th width="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr data-item-id=<%= "#{article.id}" %> class="item">
+        <td><%= article.title %></td>
+        <td><%= article.subtitle %></td>
+        <td><%= article.author %></td>
+        <td><%= article.id %></td>
+        <td><%= article.publish %></td>
+        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <caption>Click and drag to change the order of articles as they appear on home page.</caption>
+</table>
+
+
+<br>
+
+<%= link_to 'New Article', new_article_path %>

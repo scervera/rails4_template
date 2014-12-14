@@ -8,6 +8,10 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
+    @articles = Article.paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
+  end
+
+  def manage
     @articles = Article.rank(:row_order).all
   end
 
@@ -87,9 +91,9 @@ class ArticlesController < ApplicationController
 
     def resolve_layout
       case action_name
-      when "edit", "new", "create", "index"
+      when "edit", "new", "create", "manage"
         "base"
-      when "show"
+      when "show", "index"
         "interior_left"
       else
         "base"

@@ -1,36 +1,18 @@
-<h1>Listing articles</h1>
+<h1>MDN Articles</h1>
+<div class="large-12 large-centered columns article_pagination"><%= will_paginate @articles %></div>
+<% @articles.each do |article| %>
 
-<table class="table table-bordered table-striped" id="sortable">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Subtitle</th>
-      <th>Author</th>
-      <th>Article ID</th>
-      <th>Publish</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+   <div class="large-12 columns article_summary">
+      <hr />
+      <h4><%= article.title %> </h4>
+      <h5><%= article.subtitle %></h5>
+      <h6>by <%= article.author %></h6>
+      <%= image_tag article.figure_url(:thumb).to_s %>
+      <p><%= truncate(article.content.html_safe, length: 300, separator: ' ') %></p>
+      <%= link_to( "Read More", article, :class => 'button tiny alert') %>
+          
+  </div>
 
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr data-item-id=<%= "#{article.id}" %> class="item">
-        <td><%= article.title %></td>
-        <td><%= article.subtitle %></td>
-        <td><%= article.author %></td>
-        <td><%= article.id %></td>
-        <td><%= article.publish %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% end %>
 
-<br>
 
-<%= link_to 'New Article', new_article_path %>
