@@ -2,11 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.feature_article {float: left;}
-.feature_article:nth-child(odd) img {float: left; margin: 5px 8px 2px 8px;}
-.feature_article:nth-child(even) img {float: right; margin: 5px 8px 2px 8px;}
-
-
 .article_summary {
 	float: left; 
 	margin-bottom:10px;

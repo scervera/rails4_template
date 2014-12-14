@@ -12,6 +12,15 @@
 #main {background: #A1926F; z-index: -1000;}
 #main_content {margin-left: 10px; margin-top: 15px;}
 
+.feature_article {float: left;}
+.feature_article:nth-child(odd) img {float: left; margin: 5px 8px 2px 8px;}
+.feature_article:nth-child(even) img {float: right; margin: 5px 8px 2px 8px;}
+.feature_article h4 {font-size: 1.7em; line-height: 70%}
+.feature_article h5 {font-size: 1.2em; line-height: 70%; font-style: italic;}
+.feature_article h6 {font-size: 1em; color: #555; line-height: 60%;}
+.feature_article p {font-size: 1em; line-height: 150%; margin-top: 15px;}
+
+
 .widget {
     background: #fff;
 
