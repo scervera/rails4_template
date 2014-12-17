@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210121830) do
+ActiveRecord::Schema.define(version: 20141215001102) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 20141210121830) do
     t.string   "figure"
     t.text     "content"
     t.integer  "row_order"
+  end
+
+  create_table "videos", force: true do |t|
+    t.text     "title"
+    t.text     "subtitle"
+    t.string   "url"
+    t.text     "description"
+    t.boolean  "featured"
+    t.integer  "row_order"
+    t.text     "speaker"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

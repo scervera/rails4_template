@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+layout "interior_rt"
  
   def contact
   end

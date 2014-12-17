@@ -1,5 +1,8 @@
 Mdn2::Application.routes.draw do
-  # resources :articles
+  # You can have the root of your site routed with "root"
+  root 'home#index'
+
+  resources :videos
 
   resources :articles do
     post :update_row_order, on: :collection
@@ -9,9 +12,19 @@ Mdn2::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  root 'home#index'
-
+  get "pages/parable"
+  get "pages/donate"
+  get "pages/radio"
+  get "pages/news"
+  get "pages/contact"
+  get "pages/about"
+  get "pages/coaches"
+  get "pages/events"
+  get "pages/manerisms"
+  get "pages/multimedia"
+  get "pages/curriculum"
+  get "pages/biblestudy"
+  get "pages/bootcamp"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

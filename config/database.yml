@@ -24,9 +24,9 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: true
-  database: mdndata_production
-  username: coach
-  password: 0708SMClfq!
+  database: <insert database name>
+  username: <insert database username>
+  password: <insert password>
   socket: /var/run/mysqld/mysqld.sock
   pool: 5
   timeout: 5000

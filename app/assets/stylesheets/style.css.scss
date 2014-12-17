@@ -45,3 +45,29 @@
 -moz-box-shadow: 6px 3px 16px 0px rgba(119, 119, 119, 0.60);
 -webkit-box-shadow: 6px 3px 16px 0px rgba(119, 119, 119, 0.60);
 }
+
+// This is CSS to format all the article content in the website, not just the content in the "articles" model pages. 
+.article_summary {
+	float: left; 
+	margin-bottom:10px;
+	box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.71);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.71);
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.71);
+}
+.article_summary:nth-child(odd) img {float: left; margin: 5px 8px 2px 8px;}
+.article_summary:nth-child(even) img {float: right; margin: 5px 8px 2px 8px;}
+.article_summary h4 {font-size: 1.2em; line-height: 70%}
+.article_summary h5 {font-size: 1.0em; line-height: 70%; font-style: italic;}
+.article_summary h6 {font-size: .8em; color: #555; line-height: 60%;}
+.article_summary p {font-size: .8em; line-height: 115%; margin-top: 15px;}
+.article_summary img {margin-bottom:15px;}
+
+.article_pagination {text-align: center;margin-bottom: 10px;}
+
+.article_img_rt {}
+.article_img_left {}
+.article_img_full {margin-bottom: 10px;}
+.article_content h1{font-size: 2.5em; line-height: 110%; font-weight: bold;}
+.article_content h2 {font-size: 1.9em; line-height: 110%; font-style: italic;}
+.article_content h3 {font-size: 1.6em; line-height: 100%;}
+.article_content div {margin-bottom:20px;}

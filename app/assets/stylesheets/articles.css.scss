@@ -2,18 +2,4 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.article_summary {
-	float: left; 
-	margin-bottom:10px;
-	box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.71);
-	-moz-box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.71);
-	-webkit-box-shadow: 0px 0px 6px 0px rgba(119, 119, 119, 0.71);
-}
-.article_summary:nth-child(odd) img {float: left; margin: 5px 8px 2px 8px;}
-.article_summary:nth-child(even) img {float: right; margin: 5px 8px 2px 8px;}
-.article_summary h4 {font-size: 1.2em; line-height: 70%}
-.article_summary h5 {font-size: 1.0em; line-height: 70%; font-style: italic;}
-.article_summary h6 {font-size: .8em; color: #555; line-height: 60%;}
-.article_summary p {font-size: .8em; line-height: 115%; margin-top: 15px;}
-.article_summary img {margin-bottom:15px;}
-.article_pagination {text-align: center;margin-bottom: 10px;}
+
